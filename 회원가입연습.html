@@ -6,34 +6,34 @@
 </head>
 <body>
   <h1>개인회원 가입</h1>
-  <form action="회원가입연습.html" method="get">
+  <form action="회원가입연습.html" method="post">
 
     <p>
-    <label for="id">
+    <label for="id"></label>
     회원 아이디<input type="text" value="" id="id" placeholder="아이디를 입력하세요" />
              <input type="button" value="아이디중복조회" />
     <span>(영문자 또는 숫자, 4~12자리)</span>
     </p>
 
     <p>
-    <label for="password">
+    <label for="password"></label>
     비밀번호<input type="password" value="" id="password" placeholder="비밀번호를 입력하세요" />
     <span>변경 시에만 입력하십시오 (영문자 또는 숫자,4~12자리)</span>
     </p>
 
     <p>
-    <label for="password1">
+    <label for="password1"></label>
     비밀번호 확인<input type="password" value="" id="password1" placeholder="비밀번호를 입력하세요" />
     </p>
 
     <p>
-    <label for="name">
+    <label for="name"></label>
     회원성명<input type="text" value="" id="name" >
     <span>(한글 8자이내, 영문 16자이내 입력)</span>
     </p>
 
     <p>
-    <label for="username">
+    <label for="username"></label>
     주민등록번호<input type="text" value="" id="username" >-<input type="password" value="" />
     </p>
 
@@ -74,7 +74,7 @@
     </p>
     <p>
     <textarea rows="1" cols="65"  placeholder="주소를 입력하세요"></textarea>
-    <br>
+    <br />
     <textarea rows="1" cols="65"  placeholder="주소를 입력하세요"></textarea>
     </p>
 
@@ -98,18 +98,21 @@
       <option value="">daum.net</option>
       <option value="">nate.com</option>
     </select>
+    </p>
+
     <pre>
       참조 E-mail 이란?
       E-mail 고지를 받는 고객께서 고지를 정상적으로 받으실 수 없을 경우 업무의 공백을 막기위한
       서비스로 참조 E-mail을 등록애 놓으시면 매번 E-mail 고지서에 등록하신 두개의 E-mail로 고지해
       드립니다. <strong>단,한국전력과 서울도시가스에만 해당 됩니다.</strong>
     </pre>
-    </p>
 
     <p>
     한별부가서비스 안내수신
-        <input type="radio" name="yn" value="" id="" />예
-        <input type="radio" name="yn" value="" id="" />아니요
+        <label for="yes"></label>
+        <input type="radio" name="yn" value="" id="yes" />예
+        <label for="no"></label>
+        <input type="radio" name="yn" value="" id="no" />아니요
     </p>
 
     <p>
