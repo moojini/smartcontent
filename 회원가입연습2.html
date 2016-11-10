@@ -68,15 +68,15 @@
         </tr>
 
         <tr>
-          <th>전화번호</th>
+          <th><label for="phone">전화번호</label></th>
           <td>
-            <select name="" id="">
-              <option value="">02</option>
-              <option value="">031</option>
-              <option value="">032</option>
-              <option value="">033</option>
-              <option value="">041</option>
-              <option value="">042</option>
+            <select name="" id="phone">
+              <option value="02">02</option>
+              <option value="031">031</option>
+              <option value="032">032</option>
+              <option value="033">033</option>
+              <option value="041">041</option>
+              <option value="042">042</option>
               <option value="">043</option>
               <option value="">051</option>
               <option value="">052</option>
@@ -85,16 +85,16 @@
               <option value="">064</option>
             </select>
             <span>-</span>
-            <input type="text" />
+            <label for="phone1"><input type="text" id="phone1" /></label>
             <span>-</span>
-            <input type="text" />
+            <label for="phone2"><input type="text" id="phone2" /></label>
           </td>
         </tr>
 
         <tr>
-          <th>휴대폰번호</th>
+          <th><label for="pphone">휴대폰번호</label></th>
           <td>
-            <select name="" id="">
+            <select name="" id="pphone">
               <option value="">011</option>
               <option value="">016</option>
               <option value="">019</option>
@@ -102,53 +102,61 @@
               <option value="">010</option>
             </select>
             <span>-</span>
-            <input type="text" />
+            <label for="pphone1"><input type="text" id="pphone1" /></label>
             <span>-</span>
-            <input type="text" />
+            <label for="pphone2"><input type="text" id="pphone2" /></label>
           </td>
         </tr>
 
         <tr>
-          <th>주소</th>
+          <th><label for="address">주소</label></th>
           <td>
-            <input type="text" />
+            <input type="text" id="address"/>
             <span>-</span>
-            <input type="text" />
+            <label for="address1"><input type="text" id="address1" /></label>
             <input type="button" value="우편번호검색" />
+
             <br />
-            <input type="text" placeholder="주소 입력하세요" />
+
+            <label for="address2"><input type="text" placeholder="주소 입력하세요" id="address2" /></label>
+
             <br />
-            <input type="text" placeholder="주소 입력하세요" />
+
+            <label for="address3"><input type="text" placeholder="주소 입력하세요" id="address3" /></label>
           </td>
         </tr>
 
         <tr>
-          <th>E-mail</th>
+          <th><label for="email">E-mail</label></th>
           <td>
-            <input type="text" />
+            <input type="text" id="email" /></label>
             <span> @ </span>
-            <select name="" id="">
-              <option value="">직접입력</option>
-              <option value="">naver.com</option>
-              <option value="">gmail.com</option>
-              <option value="">daum.net</option>
-              <option value="">nate.com</option>
-            </select>
+
+            <label for="email1">
+            <select name="" id="email1">
+              <option value="직접입력">직접입력</option>
+              <option value="naver.com">naver.com</option>
+              <option value="gmail.com">gmail.com</option>
+              <option value="daum.net">daum.net</option>
+              <option value="nate.com">nate.com</option>
+            </select></label>
           </td>
         </tr>
 
         <tr>
-          <th>참조 E-mail</th>
+          <th><label for="eemail">참조 E-mail</label></th>
           <td>
-            <input type="text" />
+            <input type="text" id="eemail" />
             <span> @ </span>
-            <select name="" id="">
-              <option value="">직접입력</option>
-              <option value="">naver.com</option>
-              <option value="">gmail.com</option>
-              <option value="">daum.net</option>
-              <option value="">nate.com</option>
-            </select>
+
+            <label for="eemail1">
+            <select name="" id="eemail1">
+              <option value="직접입력">직접입력</option>
+              <option value="naver.com">naver.com</option>
+              <option value="gmail.com">gmail.com</option>
+              <option value="daum.net">daum.net</option>
+              <option value="nate.com">nate.com</option>
+            </select></label>
 <pre>
 참조 E-mail 이란?
 E-mail 고지를 받는 고객께서 고지를 정상적으로 받으실 수 없을 경우 업무의 공백을 막기위한
@@ -169,14 +177,15 @@ E-mail 고지를 받는 고객께서 고지를 정상적으로 받으실 수 없
         </tr>
 
         <tr>
-          <th>추천아이디</th>
+          <th><label for="underid">추천아이디</label></th>
           <td>
-            <input type="text">
+            <input type="text" id="underid" />
           </td>
         </tr>
+
       </tbody>
+
     </table>
-  </fieldset>
 
   <p>
     <input type="submit" name="" id="" value="확인" />
@@ -184,5 +193,7 @@ E-mail 고지를 받는 고객께서 고지를 정상적으로 받으실 수 없
   </p>
 
 </form>
+</fieldset>
+
 </body>
 </html>
