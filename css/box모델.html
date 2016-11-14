@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>box모델</title>
+
+  <style>
+
+body {margin:0px;}
+
+  #box {
+    margin-left: auto;
+    margin-light: auto;
+    border:1px #f00 solid;
+    max-width:800px;
+    넚이에 최대값 지정 지정된 값 이상은 커지지 않는다.
+    min-width: 400px;
+    넒이에 최소값 지정 지정된 값 이하는 줄어들지 않는다.
+
+    height: 600px;
+  }
+
+  #box1 {
+    width:auto;
+    height:auto;
+    padding:20px;
+    margin:20px;
+    border:1px #f00 solid;
+  }
+
+#hel{
+  border:1px;
+  min-height: 300px;
+  300의 이상은 컨텐츠는 늘어날수 있다,,,
+}
+  </style>
+</head>
+<body>
+
+
+<div id="box">
+  hello world
+</div>
+
+
+<div id="box1">
+shin yu jinshin yu jinshin yu jinshin yu jinshin yu jinshin yu jinshin yu jinshin yu jinshin yu jin
+shin yu jinshin yu jinshin yu jinshin yu jinshin yu jinshin yu jinshin yu jinshin yu jinshin yu jin
+shin yu jinshin yu jinshin yu jinshin yu jinshin yu jinshin yu jinshin yu jinshin yu jinshin yu jin
+shin yu jinshin yu jinshin yu jinshin yu jinshin yu jinshin yu jinshin yu jinshin yu jin
+</div>
+
+<div id="hei">
+
+
+</div>
+
+</body>
+</html>
