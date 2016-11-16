@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+
+  /*접근성코딩과 비접근성코딩비교*/
+  /*비접근성 코딩법*/
+  *{margin: 0; padding : 0;}
+
+  .article {
+    border: 1px #f00 solid;
+    width : 513px;
+    height : 132px;
+    font-size: 12px;
+  }
+
+  .article h2 {
+    color: #f00;
+    margin-left: 10px;
+  }
+
+  .thumbnaill {
+    width : 160px;
+    height : 94px;
+    overflow: hidden;
+    float: left;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .thumbnaill img {
+    width: 100%;
+
+  }
+
+  .right {
+    margin-left: 170px;
+    margin-top: 10px;
+
+  }
+
+  .right1 {
+    margin-left: 190px;
+    margin-top: 10px;
+  }
+
+
+  /*접근성 코딩법*/
+
+
+  .accessbility {
+    border: 1px #f00 solid;
+    width : 513px;
+    height : 132px;
+
+  }
+
+
+  .accessbility ul li{
+    font-size: 12px;
+  }
+
+  .accessbility ul li.first-article {
+    border: 1px #f00 solid;
+    margin-bottom: 10px;
+
+  }
+
+  .accessbility ul li.first-article h2 {
+    font-size: 20px;
+    color: #f00;
+    margin-left: 10px;
+  }
+
+
+  .first-article span {
+    width : 160px;
+    height : 94px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+    overflow:hidden;
+    float:left;
+    display:block;
+
+  }
+
+  .first-article p {
+    margin-left: 170px;
+    margin-top: 10px;
+
+  }
+
+
+  .first-article span img {
+    width: 100%;
+  }
+
+.a {
+  margin-left:200px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="accessbility">
+    <ul>
+      <li class="first-article">
+        <h2>삼성, 美전장기업 하만 9조3000억에 인수</h2>
+        <span><img src="http://static.naver.net/newsstand/2016/1115/etnews/102250/001.jpg" alt=""></span>
+        <p>
+        삼성전자가 미국 전장 전문 기업 하만을 인수했다.
+        신성장 분야인 자동차 전장 사업을 대폭 강화하기 위한 조치다.
+        삼성전자는 미래 자동차 시장에서 퀀텀 점프를 노린다....
+       </p>
+     </li>
+     <li class="a">[해설]삼성전자 `스마트 카` 주도권 의지 드러냈다 </li>
+     <li class="a">검찰, 정몽구 현대차 회장 등 3명 소환 조사…이재용 삼성전 </li>
+   </ul>
+
+  </div>
+
+
+
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <hr />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+
+
+
+
+  <div class="article">
+    <h2>삼성, 美전장기업 하만 9조3000억에 인수</h2>
+    <div class="thumbnaill"><img src="http://static.naver.net/newsstand/2016/1115/etnews/102250/001.jpg" alt=""></div>
+    <div class="right">
+      <p>삼성전자가 미국 전장 전문 기업 하만을 인수했다.
+        신성장 분야인 자동차 전장 사업을 대폭 강화하기 위한 조치다.
+        삼성전자는 미래 자동차 시장에서 퀀텀 점프를 노린다....
+      </p>
+    </div>
+    <div class="right1">
+    <ul>
+        <li>[해설]삼성전자 `스마트 카` 주도권 의지 드러냈다 </li>
+        <li>검찰, 정몽구 현대차 회장 등 3명 소환 조사…이재용 삼성전 </li>
+      </ul>
+    </div>
+  </div>
+
+
+</body>
+</html>
