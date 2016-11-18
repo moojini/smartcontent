@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>float2</title>
+
+  <style>
+
+  .a {
+    border: 1px #f00 solid;
+    width: 500px;
+    height: 300px;
+    float: left;
+  }
+
+  .aa {
+    border: 1px #000 solid;
+    width: 200px;
+    height: 200px;
+    float: left;
+  }
+
+  .aaa {
+    border: 1px #000 solid;
+    width: 300px;
+    height: 200px;
+    margin-left: 200px;
+  }
+
+  .b {
+    border: 1px #00f solid;
+    width: 200px;
+    height: 300px;
+    margin-left: 500px;
+  }
+
+
+  .c {
+    border: 3px #00f solid;
+    width: 200px;
+    height: 300px;
+    float: left;
+  }
+
+  .d {
+    border: 3px #00f solid;
+    height: 300px;
+    margin: 0px 210px;
+
+  }
+
+  .e {
+    border: 3px #00f solid;
+    width: 200px;
+    height: 300px;
+    float: right;
+  }
+
+  .grid-list {
+    border: 1px #000 solid;
+    width: 540px;
+    overflow: hidden;
+  }
+
+  .grid-list ul {
+    margin: 0; padding: 0;
+    list-style: none;
+    width:110%;
+  }
+
+  .grid-list li {
+    border: 1px #f00 solid;
+    width: 98px;
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .foo_1 {
+    border: 1px #f00 solid;
+    width: 200px;
+    height: 200px;
+    float: left;
+  }
+
+  .foo_2 {
+    border: 1px #f00 solid;
+    height: 400px;
+    overflow: hidden;
+    margin-left: 220px;
+  }
+
+
+  </style>
+</head>
+<body>
+
+  <h2>float / overflow</h2>
+
+  <div class="foo_1"></div>
+  <div class="foo_2">"선생님이란 사람이 대체 누구요?"
+
+최순실(60·구속)씨 국정 농단 사건을 수사하는 검사들이 최근 '선생님'이라는 단어에 민감한 반응을 보이고 있다고 한다.
+
+피의자는 물론 주요 참고인 등의 휴대전화 문자 메시지나 SNS(소셜네트워킹서비스) 등에서 선생님이라는 단어가 발견되면 그 즉시 누구를 가리키는 것인지 집요하게 추궁한다는 것이다.
+
+검찰 등에 따르면 수사팀은 최근 한 정부 관계자를 조사하는 과정에서 '선생님이 나가신다'는 내용의 휴대전화 문자 메시지를 발견했다고 한다. 이에 정부 관계자는 검사에게 "한 행사에 초청한 인사를 '선생님'이라고 표현한 것"이라고 설명했지만, 검사는 "선생님이 최순실씨를 말하는 것 아니냐"고 거듭 캐묻더라는 것이다.
+
+중앙 부처의 간부는 "검찰 조사를 받고 나온 몇몇 공무원들로부터 선생님이란 단어 때문에 생각지도 못한 곤욕을 치렀다는 말을 전해들었다"고 했다.
+
+[출처] 본 기사는 조선닷컴에서 작성된 기사 입니다선생님이란 사람이 대체 누구요?"
+
+최순실(60·구속)씨 국정 농단 사건을 수사하는 검사들이 최근 '선생님'이라는 단어에 민감한 반응을 보이고 있다고 한다.
+
+피의자는 물론 주요 참고인 등의 휴대전화 문자 메시지나 SNS(소셜네트워킹서비스) 등에서 선생님이라는 단어가 발견되면 그 즉시 누구를 가리키는 것인지 집요하게 추궁한다는 것이다.
+
+검찰 등에 따르면 수사팀은 최근 한 정부 관계자를 조사하는 과정에서 '선생님이 나가신다'는 내용의 휴대전화 문자 메시지를 발견했다고 한다. 이에 정부 관계자는 검사에게 "한 행사에 초청한 인사를 '선생님'이라고 표현한 것"이라고 설명했지만, 검사는 "선생님이 최순실씨를 말하는 것 아니냐"고 거듭 캐묻더라는 것이다.
+
+중앙 부처의 간부는 "검찰 조사를 받고 나온 몇몇 공무원들로부터 선생님이란 단어 때문에 생각지도 못한 곤욕을 치렀다는 말을 전해들었다"고 했다.
+
+[출처] 본 기사는 조선닷컴에서 작성된 기사 입니다</div>
+
+  <br />
+
+  <h2>grid list</h2>
+
+    <div class="grid-list">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+<br />
+
+<!-- 2단 겹침현상 -->
+
+<h2>2단 겹침현상</h1>
+  <div class="a">
+    <div class="aa"></div>
+    <div class="aaa"></div>
+
+  </div>
+  <div class="b"></div>
+
+<br />
+  <!-- 3단 겹침현상 -->
+
+<h2>3단 겹침 현상</h2>
+
+
+  <div class="c"></div>
+  <div class="e"></div>
+  <div class="d"></div>
+
+  <!--
+  <div class="c"></div>
+  <div class="d"></div>
+  <div class="e"></div>
+ -->
+
+
+
+</body>
+</html>
