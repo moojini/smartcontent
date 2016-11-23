@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.home1 {
+  border: 3px #f00 solid;
+  width: 1000px;
+  height: 600px;
+  margin: 0 auto;
+}
+.home1 .logo {
+  margin: 10px 10px;
+  height: 50px;
+  border: 1px #f00 solid;
+  float: left;
+}
+.home1 .banner {
+  float: right;
+  margin: 10px 10px;
+  height: 50px;
+  border: 1px #f00 solid;
+}
+.home1 .button {
+  clear: left;
+}
