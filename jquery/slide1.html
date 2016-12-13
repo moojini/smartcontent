@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+            // 문서가 준비되면 실행해
+            
+        })
+        
+         $(window).load(function(){
+            //  문서가 완료되면 실행해
+            $('.loadding>img').hide();
+         })
+        
+    </script>
+    
+    <style type="text/css">
+        
+        .loadding img {
+            width: 100px; 
+            height: 100px;
+            position: absolute;
+            right:50%;
+            bottom:50%;
+            animation: aa 3s infinite;
+            
+        }
+        
+        
+        @keyframes aa {
+            100% {transform: rotateY(360deg);}
+        } 
+        
+    </style>
+</head>
+<body>
+     <div class="loadding"><img src="../image/moojini.png"></div>
+    <img src="../image/a.jpg">
+    <img src="../image/b.jpg">
+    <img src="../image/c.jpg">
+    <img src="../image/d.jpg">
+</body>
+</html>

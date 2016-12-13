@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        // for
+        // while
+        //반복문 
+        
+        
+            
+            // for(var i = 0; i < 10; i++){
+                
+            //     console.log(i+"단")
+                
+            // for(var j = 0; j < 10; j++) {
+                
+            //     console.log(i+"x"+j+"="+i*j)
+                
+            //     }
+            // }
+            
+            
+    var text = [
+    ["일단은","음....","어디보자","우어어어어","호오오오"],
+    ["어여쁨","높은지능","낮은지능","먹성","귀여움","썩은인성","바른인성","D라인","O라인","S라인","빚","돈"],
+    
+    ["한숟깔","한방울","한가득","우오오오어ㅓㅇㄴ이ㅏ러ㅣㅏㅓㅎ","헉....","깜빡했다..","덜넣음"]
+    
+    ]
+      
+      
+    for(i=0;i<text.length;i++){
+     document.write(Math.floor(Math.random() * text[i].length)+"<br/>")
+    }
+    
+    var text = [
+    ["일단은","음....","어디보자","우어어어어","호오오오"],
+    ["어여쁨","높은지능","낮은지능","먹성","귀여움","썩은인성","바른인성","D라인","O라인","S라인","빚","돈"],
+    ["한숟깔","한방울","한가득","우오오오어ㅓㅇㄴ이ㅏ러ㅣㅏㅓㅎ","헉....","깜빡했다..","덜넣음"]
+    ]
+    
+    var html = "";
+      
+    for(i=0;i<text.length;i++){
+        var randoms = Math.floor(Math.random() * text[i].length);
+        html += text[i][randoms]+" ";
+    }
+    
+    document.write(html)
+    
+    
+    var i = 0;
+        
+        while(i < 10){
+            i++
+            console.log(i+"단")
+            
+            
+    var j = 0;
+            
+        while(j < 10){
+            j++
+            console.log(i+"x"+j+"="+i*j)
+            
+            }
+        
+        }
+        
+        
+    
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
