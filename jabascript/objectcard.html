@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        var card = {
+            card_number:13,
+            card_deck:[],
+            shape:['♠','♣','♥','◆'],
+            theorem:function(){
+                
+                card_deck=[];
+                
+                for(var i=0 in this.shape){
+                    console.log(i);
+                    for(var j=0; j < this.card_number; j++){
+                        
+                    if(j == 1) card_deck.push(this.shape[i]+"A");    
+                    else if(j==11) card_deck.push(this.shape[i]+"J");    
+                    else if(j==12) card_deck.push(this.shape[i]+"Q");    
+                    else if(j==13) card_deck.push(this.shape[i]+"K");    
+                    else card_deck.push(this.shape[i]+j); 
+                         
+                    }
+                }
+                
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    <button type="button" onclick="card.theorem()">생성</button>
+    
+    
+    
+    
+</body>
+</html>

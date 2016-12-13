@@ -1,0 +1,81 @@
+<script type="text/javascript">
+    
+    // var arr = ["apple","orange","banana","pineapple"];
+    
+    // console.log(arr[3],arr[3])
+    
+    
+    
+    // var arr2 = [
+    //     ["apple0","pen0","banana0","pineapple0"],
+    //     ["apple1","pen1","banana1","pineapple1"],
+    //     ["apple2","pen2","banana2","pineapple2"],
+    //     ["apple3","pen3","banana3","pineapple3"]
+    //     ]
+        
+    
+    // console.log(arr2[2][2])
+    
+    
+    
+    var arr = ["apple","pen","strawberry","pineapple"];
+    
+    arr[1] = "banana";
+    console.log(arr);
+    
+    //random * 100
+    
+    // var random = Math.random() 
+    
+    // var random_number = Math.floor(random * 100)
+    
+    // console.log(Math.floor(Math.random() * 100))
+    
+    // console.log(random_number)
+    
+    
+    <!--var user = prompt("만들 사람을 입력해 주세요?");-->
+    
+    <!--alert("어디한번 "+user+" 을 만들어 볼까?");-->
+    <!--alert("확인을 누르면 만들어집니다.");-->
+    
+    <!--var text1 = ["음,,,", "일단...", "어디보자", "우어어어어엉", "호로로롤로" ];-->
+    <!--var text2 = ["예쁨","지식","낮은지능","먹성","귀여움","썩은인성","난독증","D라인","못생김","S라인","빚","돈","말많음"];-->
+    <!--var text3 = ["한숟깔","한방울","한가득","우오오오어ㅓㅇㄴ이ㅏ러ㅣㅏㅓㅎ","헉....","깜빡했다..","어디갔어?어디갔지?","으라차찻","콰콰ㄹㅘ콸콸콸....."];-->
+    
+    <!--var ran1 = Math.floor(Math.random() * text1.length);-->
+    <!--var ran2 = Math.floor(Math.random() * text2.length);-->
+    <!--var ran3 = Math.floor(Math.random() * text3.length);-->
+    
+    <!--document.write(user + "님,,,,," +" "+ text1[ran1] +" "+ text2[ran2] +" "+ text3[ran3] );-->
+    <!--console.log(text1);-->
+    
+     var text = [
+    ["일단은","음....","어디보자","우어어어어","호오오오"],
+    ["어여쁨","높은지능","낮은지능","먹성","귀여움","썩은인성","바른인성","D라인","O라인","S라인","빚","돈"],
+    ["한숟깔","한방울","한가득","우오오오어ㅓㅇㄴ이ㅏ러ㅣㅏㅓㅎ","헉....","깜빡했다..","덜넣음"]
+    ]
+    
+    var ran1 = Math.floor(Math.random() * text[0].length);
+    var ran2 = Math.floor(Math.random() * text[1].length);
+    var ran3 = Math.floor(Math.random() * text[2].length);
+    
+    document.write(text[0][ran1]+" "+text[1][ran2]+" "+text[2][ran3]);
+    
+    var text = [
+    ["일단은","음....","어디보자","우어어어어","호오오오"],
+    ["어여쁨","높은지능","낮은지능","먹성","귀여움","썩은인성","바른인성","D라인","O라인","S라인","빚","돈"],
+    ["한숟깔","한방울","한가득","우오오오어ㅓㅇㄴ이ㅏ러ㅣㅏㅓㅎ","헉....","깜빡했다..","덜넣음"]
+    ]
+    
+    var html = "";
+      
+    for(i=0;i<text.length;i++){
+        var randoms = Math.floor(Math.random() * text[i].length);
+        html += text[i][randoms]+" ";
+    }
+    
+    document.write(html)
+    
+            
+</script>

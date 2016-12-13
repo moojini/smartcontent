@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        
+        var cardmodel = ['♠','♣','♥','◆'];
+        var cardlist = [];
+        var user = [];
+        
+        function card(){
+            
+            for(i=0; i<3; i++){
+                var ran = Math.floor(Math.random() * cardlist.length);
+                user.unshift(cardlist[ran]);
+                cardlist.splice(ran,1);
+            }
+            console.log(user);
+            }
+            
+        function addcard(){
+            var rans = Math.floor(Math.random() * cardlist.length);
+            user.unshift(cardlist[rans]);
+            cardlist.splice(rans,1);
+            console.log(user);
+        }
+        
+        
+        function cardmake(){
+            cardlist = [];
+            for(i=0; i<4; i++){
+                for(j=1; j<=13; j++){
+                    if(j==1) cardlist.push(cardmodel[i]+"A");
+                    else if(j==11) cardlist.push(cardmodel[i]+"J");    
+                    else if(j==12) cardlist.push(cardmodel[i]+"Q");    
+                    else if(j==13) cardlist.push(cardmodel[i]+"K");    
+                    else cardlist.push(cardmodel[i]+j);
+                    }
+                }
+                console.log(cardlist);
+            }
+            
+            
+        function die(){
+            
+        }
+            
+    </script>
+</head>
+<body>
+    <button type="button" onclick="cardmake()">카드정리</button>
+    <button type="button" onclick="card()">게임시작</button>
+    <button type="button" onclick="addcard()">콜</button>
+    <button type="button" onclick="cardmake()">다이</button>
+</body>
+</html>
